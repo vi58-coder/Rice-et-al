@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New begenings</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./images/logo.svg" alt="">
+                <div class="logo">rice et al</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <div class="container">
+        <div class="hero">
+            <a class="selector" href="#">Home  &gt;</a> 
+            <a class="selector" href="#">Menu &gt;</a>  
+            <a class="selector first" href="#">Lemon Rice</a>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="./images/fried.svg" alt="Lemon Rice">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Lemon Rice</h1>
+               <div class="rating-box">
+                    <div class="rating">
+                        <i class="fa-solid fa-star icon"></i>
+                    </div>
+                    <div class="rating-num">4.5</div>
+               </div>
+                <div class="description">
+                    Zesty and flavorful, this dish combines tender chicken and fragrant rice 
+                    infused with tangy lemon and aromatic herbs. A refreshing twist on a 
+                    classic rice meal. Pair it with a fresh salad or a side of roasted 
+                    vegetables for a satisfying meal.
+                </div>
+                <div class="price">$30.00</div>
+
+                <div class="quantity-box">
+
+                    <div class="quantity">
+                      <button class="decrement" aria-label="Decrease quantity" id="minus">-</button>
+                       <input type="number" value="1" min="1" max="100" aria-label="Quantity" id="number" readonly>
+                      <button class="increment" aria-label="Increase quantity" id="plus">+</button>
+                    </div>
+                    <div class="quanty-right">
+                        <i class="fa-regular fa-heart icon-two" id="likeButton"></i>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn">Add To Cart</button>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

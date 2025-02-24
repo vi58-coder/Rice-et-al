@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --primary: #FF9F0D;
+    --secondary: #FFF9F0;
+    --tetiary: #979797;
+    --quaternary: #FE9FOE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4rem;
+    background: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 74px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color .3s ease;
+}
+
+.nav-links li a:hover{
+    color: var(--primary);
+}
+
+.nav-links .active {
+    color: var(--primary);
+}
+
+.icons i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* hero */
+
+
+.container {
+    max-width: 85%;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.selector{
+    text-decoration: none;
+    color: var(--tetiary);
+    margin-right: 10px;
+}
+
+.first{
+    color: var(--primary);
+}
+
+.first{
+    color: var(--primary);
+}
+
+
+.product {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 2;
+}
+
+.product-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: var(--primary); /* Yellow for stars */
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rating-box{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rating-num{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 80%;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.quantity-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    max-width: 70%;
+    padding-bottom: 1.5rem;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-right {
+    padding-bottom: 10px;
+}
+
+.icon-two{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-two:hover{
+    background-color: var(--primary);
+    color: white;
+}
+
+.icon-two.liked {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    padding: 10px; /* Add some padding */
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.quantity button {
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 25px; /* Adjust font size */
+    font-weight: 600;
+}
+
+.quantity input {
+    width: 40px;
+    padding: 5px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    font-size: 18px; /* Adjust font size */
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn{
+    padding: 10px 6rem;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover{
+    background-color: var(--primary);
+    color: white;
+}
