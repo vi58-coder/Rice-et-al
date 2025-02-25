@@ -4,7 +4,8 @@
     --primary: #FF9F0D;
     --secondary: #FFF9F0;
     --tetiary: #979797;
-    --quaternary: #FE9FOE;
+    --new: #FAF3EA;
+    --pitch: #FE9F0E;
 }
 
 *{
@@ -303,7 +304,7 @@ nav {
     color: var(--tetiary);
 }
 .progress-section {
-    width: 70%;
+    width: 50%;
     padding-left: 20px;
 }
 .progress-bar {
@@ -400,10 +401,138 @@ nav {
 
 .review-date {
     color: #777; /* Slightly lighter text color */
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .review-stars {
     color: orange; /* Or any color you prefer for stars */
     font-size: 20px;
+}
+
+/* Related Produc Section */
+
+.related-products {
+    padding: 20px;
+}
+
+.related-header{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 95%;
+    margin: auto;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 350px;
+    text-align: left;
+}
+.product-image-two {
+    position: relative;
+    background: #fde4c3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.product-image-two img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary);
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.product-info {
+    padding: 10px 0;
+}
+
+.product-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 18px;
+}
+.rating {
+    font-size: 18px;
+    color: black;
+}
+
+.star-rating{
+    color: var(--primary);
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    padding-bottom: 1rem;
+}
+.add-to-cart {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.add-to-cart:hover {
+   background-color: rgba(223, 140, 24, 0.974);
+
+}
+
+/* experience section */
+
+.experience{
+    background-color: var(--new);
+    margin: 2rem 0 3rem 0;
+}
+
+.experience-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 4.5rem 0;
+}
+
+.experience-items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experience-header{
+    font-size: 18px;
+}
+
+.experience-para{
+    color: var(--tetiary);
 }
