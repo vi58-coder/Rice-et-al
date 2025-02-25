@@ -257,12 +257,17 @@ nav {
     padding-bottom: 4rem;
 }
 
+.top-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin-bottom: 1rem;
+}
+
 .reviews-container {
     display: flex;
     align-items: center;
     padding: 35px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
     max-width: 75%;
     margin: auto;
     margin-bottom: 3rem;
@@ -320,4 +325,85 @@ nav {
     background-color: var(--primary);
     height: 100%;
     border-radius: 5px;
+}
+
+/* review list section */
+
+.review-list {
+    padding: 2rem 6rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.show-list{
+    padding-top: 1.5rem;
+}
+
+.filter-sort {
+    display: flex;
+    align-items: center;
+}
+
+.sort{
+    color: var(--tetiary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.selection{
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.review {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 15px; /* Add some spacing between reviews */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make avatar round */
+    margin-right: 10px;
+}
+
+.review-content {
+    flex: 1; /* Allow content to take up available space */
+}
+
+.user-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between; /* Align date and stars */
+    align-items: center; /* Vertically center them */
+    margin-top: 10px;
+}
+
+.review-date {
+    color: #777; /* Slightly lighter text color */
+    font-size: 14px;
+}
+
+.review-stars {
+    color: orange; /* Or any color you prefer for stars */
+    font-size: 20px;
 }
