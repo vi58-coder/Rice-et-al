@@ -19,12 +19,12 @@ body{
 }
 
 
-nav {
+.menu-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 4rem;
-    background: white;
+    z-index: 1;
 }
 
 .logo-container {
