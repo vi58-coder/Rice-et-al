@@ -20,6 +20,7 @@ body{
 
 .main-hero-header{
     position: relative;
+    margin-bottom: 5rem;
 }
 
 .main-hero-decore{
@@ -29,7 +30,7 @@ body{
     z-index: -1;
 }
 
-.dishes{
+/* .dishes{
     position: relative;
     -webkit-animation: spin 7s linear infinite;
     -moz-animation: spin 7s linear infinite;
@@ -46,7 +47,7 @@ body{
 
 @keyframes spin{
     100%{-webkit-transform: rotate(360deg);}
-}
+} */
 
 .spicy{
     position: absolute;
@@ -78,3 +79,114 @@ body{
     font-size: 18px;
 }
 
+/* clip path setion */
+
+
+.clip-container {
+    width: 90%;
+    max-width: 1250px;
+    margin:auto;
+    padding-bottom: 4rem;
+    margin: 10rem;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.header h2 {
+    font-size: 26px;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px; 
+}
+
+.clippy {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-top: 3rem;
+}
+
+.clip-dish {
+    background-color: white; 
+    border-radius: 20px 150px 20px 20px;
+    padding-top: 10rem;
+    border: 3px solid var(--new);
+    box-shadow: 5px 6px 2px  rgba(0, 0, 1, 0.1);
+    width: 25%;
+    min-width: 250px; 
+    margin-bottom: 20px;
+    text-align: start;
+    position: relative;
+    z-index: -1;
+    /* clip-path: polygon(0 0, 100% 28%, 100% 100%, 0% 100%); */
+}
+
+.clip-images{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    z-index: -3;
+
+}
+
+
+
+.dish-details {
+    padding: 20px;
+}
+
+.food-type {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ff9800;
+}
+
+.cost{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.order-now {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+.shade{
+    width: 100%;
+    height: 20rem;
+    background-color: var(--secondary);
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    z-index: -5;
+    border-radius: 25px;
+}
