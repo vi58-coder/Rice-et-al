@@ -86,7 +86,7 @@ body{
     width: 90%;
     max-width: 1250px;
     margin:auto;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     margin: 10rem;
     position: relative;
 }
@@ -208,7 +208,7 @@ body{
 .about-us-image{
     width: 40%;
     position: absolute;
-    top: -230px;
+    top: -210px;
 
 }
 
@@ -278,4 +278,101 @@ body{
     .accent-image {
         display: none; /* Hide on smaller screens */
     }
+}
+
+.customers-container{
+    background-color: var(--primary);
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.customers-wrapper{
+    padding: 3rem 0 6rem 0;
+}
+
+.customers-top{
+    margin-bottom: 4rem;
+}
+
+.customers-header{
+    text-transform: capitalize;
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+
+.customers-para{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.slider-wrapper{
+    position: relative;
+    
+}
+
+
+.slider{
+    display: flex;
+    gap: 2rem;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow:  0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.customers-slide{
+    flex: 1 0 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 4rem;
+}
+
+.customer-name{
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 10px 0;
+
+}
+
+.last-star{
+    font-size: 20px;
+}
+
+.customer-rating{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+.slider-nav a{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 75%;
+    transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+
+.home-experience{
+    margin-top: 0;
 }
