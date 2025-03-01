@@ -14,8 +14,29 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+.top-links{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        transition: color .3s ease;
+    }
+    
+    .top-links:hover{
+        color: var(--primary);
+    }
+
+
+.contact-us:hover{
+    color: white;
 }
 
 .main-hero-header{
@@ -30,7 +51,7 @@ body{
     z-index: -1;
 }
 
-/* .dishes{
+.dishes{
     position: relative;
     -webkit-animation: spin 7s linear infinite;
     -moz-animation: spin 7s linear infinite;
@@ -47,7 +68,7 @@ body{
 
 @keyframes spin{
     100%{-webkit-transform: rotate(360deg);}
-} */
+}
 
 .spicy{
     position: absolute;
@@ -77,7 +98,9 @@ body{
     border-radius: 25px;
     color: white;
     font-size: 18px;
+    transition: background 3s ease;
 }
+
 
 /* clip path setion */
 

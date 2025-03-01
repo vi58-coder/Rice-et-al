@@ -14,8 +14,11 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -44,7 +47,7 @@ body{
     gap: 74px;
 }
 
-.nav-links li a {
+.top-links {
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -52,7 +55,7 @@ body{
     transition: color .3s ease;
 }
 
-.nav-links li a:hover{
+.top-links:hover{
     color: var(--primary);
 }
 
