@@ -101,6 +101,55 @@ body{
     transition: background 3s ease;
 }
 
+@media (max-width: 800px){
+    .main-hero-header{
+        overflow: hidden;
+    }
+
+    .main-hero{
+       background-color: var(--primary); 
+       color: white;
+       margin-top: 1.5rem;
+    }
+
+    .main-hero-wrap{
+        padding: 2rem 8px 4rem 8px;
+    }
+
+    .order-button{
+        background-color: white;
+        color: var(--primary);
+        font-weight: 600;
+    }
+    .main-hero-decore{
+        display: none;
+    }
+
+    .dishes{
+        height: 70%;
+        width: 70%;
+        animation: none;
+        position: absolute;
+        left: 60%;
+        top: 50%;
+
+    }
+    
+
+    .spicy{
+        width: 80px;
+        height: 80px;
+        left: 45%;
+        top: 70%;
+    }
+
+    .main-hero-text{
+        width: 100%;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
 
 /* clip path setion */
 
@@ -135,7 +184,6 @@ body{
 .clippy {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
     margin-top: 3rem;
 }
 
@@ -214,6 +262,64 @@ body{
     border-radius: 25px;
 }
 
+.slider-button{
+    display: none;
+}
+
+@media (max-width: 800px){
+
+    .header{
+        margin-bottom: 3rem;
+    }
+
+    .clip-container{
+        width: 100%;
+        margin: 0 0 3rem 0;
+        padding: 0 12px;  
+        overflow: hidden;
+        width: 100%; 
+        position: relative;
+    }
+
+    .shade{
+        display: none;
+    }
+
+    .clip-dish{
+        width: 100%; /* Adjust as needed */
+        min-width: 250px;
+        margin: 10px 10%;
+    }
+
+    .clippy{
+        transition: transform 0.5s ease-in-out;
+        justify-content: space-between;
+    }
+
+
+     .slider-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ff9800;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .slider-button.left {
+        left: 10px;
+    }
+
+    .slider-button.right {
+        right: 10px;
+    }
+}
+
 
 /* about us section */
 
@@ -284,24 +390,39 @@ body{
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+@media (max-width: 800px){
+    .about-container{
+        padding: 3rem 1rem 5rem  1rem;
     }
 
-    .image-section {
-        padding: 10px;
+    .empty{
+        display: none;
     }
 
-    .content-section {
-        padding: 10px;
+    .about-us-image{
+        top: 80%;
+        right: 25%;
+    }
+
+    .content-section{
         text-align: center;
+        max-width: 100%;
     }
 
-    .accent-image {
-        display: none; /* Hide on smaller screens */
+    .about-header{
+        width: 100%;
+    }
+
+    .about-para{
+        width: 100%;
+    }
+
+    .accent-image{
+        width: 100px;
     }
 }
+
+/* happy customers section */
 
 .customers-container{
     background-color: var(--primary);
@@ -334,7 +455,7 @@ body{
 }
 
 
-.slider{
+.slider-two{
     display: flex;
     gap: 2rem;
     max-width: 50%;
@@ -398,4 +519,15 @@ body{
 
 .home-experience{
     margin-top: 0;
+}
+
+@media (max-width: 800px){
+    .customers-top{
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+    }
+
+    .slider-two{
+        max-width: 90%;
+    }
 }

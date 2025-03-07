@@ -68,6 +68,19 @@ body{
     cursor: pointer;
 }
 
+@media (max-width: 800px){
+    
+    .menu-nav{
+        padding: 5px 20px;
+    }
+
+
+
+    .nav-links{
+        display: none;
+    }
+}
+
 
 /* hero */
 
@@ -251,6 +264,33 @@ body{
     color: white;
 }
 
+
+@media (max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .product{
+        flex-direction: column;
+    }
+
+    .description{
+        max-width: 100%;
+
+    }
+
+    .quantity-box{
+        max-width: 90%;
+        gap: 20px;
+    }
+
+    .btn{
+        padding: 10px 35px;
+    }
+}
+
 /* review section */
 
 .review-wrap{
@@ -335,6 +375,14 @@ body{
     border-radius: 5px;
 }
 
+
+@media (max-width: 800px){
+    .review-text{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
 /* review list section */
 
 .review-list {
@@ -343,6 +391,7 @@ body{
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
@@ -415,6 +464,21 @@ body{
 .review-stars {
     color: orange; /* Or any color you prefer for stars */
     font-size: 20px;
+}
+
+@media (max-width: 800px){
+    .review-list{
+        padding: 2rem 20px;
+    }
+
+    .header{
+        align-items: flex-end;
+    }
+
+    .user-info{
+        margin-right: 10px;
+    }
+    
 }
 
 /* Related Produc Section */
@@ -514,6 +578,8 @@ body{
 
 }
 
+
+
 /* experience section */
 
 .experience{
@@ -523,6 +589,7 @@ body{
 
 .experience-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 80%;
@@ -542,6 +609,18 @@ body{
 
 .experience-para{
     color: var(--tetiary);
+}
+
+@media (max-width: 800px){
+
+   .experience-wrapper{
+    max-width: 90%;
+   }
+
+   .experience-items{
+      padding-left: 4rem;
+      padding-bottom: 1rem;
+   }
 }
 
 /* subscribe section */
@@ -632,7 +711,26 @@ body{
     right: -1px;
 }
 
+@media (max-width: 800px){
+    .sub-container{
+        max-width: 85%;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-text{
+        max-width: 100%;
+    }
+
+    .sub-wrap{
+        gap: 5px;
+    }
+}
+
 /* footer */
+
+.footer{
+    display: none;
+}
 
 .footer-wrap{
     margin-top: 12rem;
@@ -718,3 +816,92 @@ body{
     top: -30px;
     z-index: -1;
 }
+
+.mobile-footer-image{
+    display: none;
+}
+
+@media (max-width: 800px){
+
+    .footer-wrap, .last-part{
+        display: none;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer {
+ /* Light gray background */
+        padding: 20px 0;
+      }
+      
+      .footer-container {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .footer-accordion .accordion-item {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .footer-accordion .accordion-header {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .footer-accordion .accordion-header::after {
+        content: '+';
+        font-size: 20px;
+      }
+      
+      .footer-accordion .accordion-header.active::after {
+        content: '-';
+      }
+      
+      .footer-accordion .accordion-content {
+        padding: 0 15px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+      }
+      
+      .footer-accordion .accordion-content p {
+        padding: 10px 0;
+        margin: 0;
+      }
+      
+      .footer-social {
+        text-align: start;
+        margin-top: 20px;
+      }
+      
+      .footer-social img {
+        width: 20px;
+        margin: 0 10px;
+      }
+      
+      .footer-copyright {
+        text-align: start;
+        margin-top: 20px;
+      }
+
+      .mobile-footer-image{
+        display: block;
+        position: absolute;
+        top: 350px;
+        left: -30px;
+        z-index: -5;
+      }
+}
+
