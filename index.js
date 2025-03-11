@@ -28,7 +28,7 @@ accordionHeaders.forEach(header => {
 // slider 
 let slideIndex = 0;
 
-        function slide(direction) {
+ function slide(direction) {
             slideIndex += direction;
             const dishWidth = document.querySelector('.dish').offsetWidth + 20; // Include margin
             const maxSlides = document.querySelectorAll('.dish').length - 1;
@@ -39,5 +39,18 @@ let slideIndex = 0;
                 slideIndex = 0;
             }
 
-            slider.style.transform = `translateX(-${slideIndex * dishWidth}px)`;
-        }
+    slider.style.transform = `translateX(-${slideIndex * dishWidth}px)`;
+ }
+
+ let menuList = document.getElementById("menuList");
+ menuList.style.maxHeight = "0px";
+ 
+ function toggleMenu(){
+     if(menuList.style.maxHeight == "0px"){
+         menuList.style.maxHeight = "300px";
+     }else{
+         menuList.style.maxHeight = "0px";
+     }
+ }
+
+

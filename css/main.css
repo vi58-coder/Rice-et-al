@@ -187,7 +187,7 @@ body{
     margin-top: 3rem;
 }
 
-.clip-dish {
+.dish {
     background-color: white; 
     border-radius: 20px 150px 20px 20px;
     padding-top: 10rem;
@@ -273,25 +273,26 @@ body{
     }
 
     .clip-container{
-        width: 100%;
         margin: 0 0 3rem 0;
         padding: 0 12px;  
         overflow: hidden;
         width: 100%; 
         position: relative;
+        max-width: 500px;
     }
 
     .shade{
         display: none;
     }
 
-    .clip-dish{
+    .dish{
         width: 100%; /* Adjust as needed */
         min-width: 250px;
         margin: 10px 10%;
     }
 
     .clippy{
+        display: flex;
         transition: transform 0.5s ease-in-out;
         justify-content: space-between;
     }
